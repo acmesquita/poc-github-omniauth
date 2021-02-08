@@ -1,24 +1,28 @@
-# README
+# Github + Devise
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Autenticação com o Github utilizando o [devise](https://github.com/heartcombo/devise) e [omniauth](https://github.com/heartcombo/devise/wiki/OmniAuth:-Overview)
 
-Things you may want to cover:
+## Getting Starting
 
-* Ruby version
+Requisitos:
 
-* System dependencies
+- Ruby: 3.0
+- Rails: 6.1.1
+- Node: >12
 
-* Configuration
 
-* Database creation
+Adicionar credenciais do GitHub OAuth no arquivo `.env`.
 
-* Database initialization
+```env
+APP_ID=******
+APP_SECRET=*****
+```
 
-* How to run the test suite
+**Iniciar a aplicação**
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
 
-* Deployment instructions
+bundle install
+rails s
 
-* ...
+```
